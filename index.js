@@ -297,4 +297,6 @@ client.on("interactionCreate", async i => {
 process.on("unhandledRejection", () => {});
 client.on("error", () => {});
 
-client.login(BOT_TOKEN);
+client.login(process.env.TOKEN);
+
+
