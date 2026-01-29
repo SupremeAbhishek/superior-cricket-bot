@@ -297,6 +297,8 @@ client.on("interactionCreate", async i => {
 process.on("unhandledRejection", () => {});
 client.on("error", () => {});
 
+console.log("TOKEN EXISTS:", !!process.env.TOKEN);
 client.login(process.env.TOKEN);
+
 
 
